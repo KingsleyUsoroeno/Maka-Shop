@@ -5,7 +5,6 @@ import 'package:maka_shop/features/inventory/domain/model/inventory.dart';
 import 'package:maka_shop/features/inventory/domain/repository/inventory_repository.dart';
 
 part 'inventory_event.dart';
-
 part 'inventory_state.dart';
 
 class InventoryBloc extends Bloc<InventoryEvent, InventoryState> {
@@ -24,7 +23,6 @@ class InventoryBloc extends Bloc<InventoryEvent, InventoryState> {
     } on ServerException catch (e) {
       emit(AddItemToInventoryErrorState(e.message));
     } catch (e) {
-      print(e.toString());
       emit(AddItemToInventoryErrorState(e.toString()));
     }
   }

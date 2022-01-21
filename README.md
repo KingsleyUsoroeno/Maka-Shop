@@ -11,7 +11,7 @@
 Download or clone this repo by using the link below:
 
 ```
-https://bitbucket.org/seadvocacy/drohealth-flutter
+https://github.com/KingsleyUsoroeno/Maka-Shop.git
 ```
 
 **Step 2:**
@@ -117,4 +117,6 @@ void main() async {
 
 ### Coding Guidelines
 
+This project follows the Mvvm Architecture structure guidelines to ensure maintainability and
+scalability over time.
 

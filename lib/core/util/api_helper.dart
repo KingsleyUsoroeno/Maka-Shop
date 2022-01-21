@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:dio/dio.dart';
 import 'package:maka_shop/core/exception/server_exception.dart';
 
@@ -16,6 +18,7 @@ class ApiBaseHelper {
       responseType: ResponseType.json,
       connectTimeout: 30000,
       receiveTimeout: 30000,
+      contentType: ContentType.json.toString()
     ))
       ..options.headers = headers
       ..interceptors.addAll([
